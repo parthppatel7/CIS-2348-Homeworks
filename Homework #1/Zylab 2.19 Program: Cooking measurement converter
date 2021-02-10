@@ -1,0 +1,33 @@
+print('Enter amount of lemon juice (in cups):')
+l = float(input())
+print('Enter amount of water (in cups):')
+w = float(input())
+print('Enter amount of agave nectar (in cups):')
+a = float(input())
+print('How many servings does this make?')
+s = float(input())
+print('')
+print('Lemonade ingredients - yields ' + '{:.2f}'.format(s) + ' servings')
+print('{:.2f}'.format(l) + ' cup(s) lemon juice')
+print('{:.2f}'.format(w) + ' cup(s) water')
+print('{:.2f}'.format(a) + ' cup(s) agave nectar')
+print('')
+print('How many servings would you like to make?')
+servings = float(input())
+print('')
+print('Lemonade ingredients - yields '+ '{:.2f}'.format(servings) + ' servings')
+x = servings/s
+l1 = l * x
+w1 = w * x
+a1 = a * x
+print('{:.2f}'.format(l1) + ' cup(s) lemon juice')
+print('{:.2f}'.format(w1) + ' cup(s) water')
+print('{:.2f}'.format(a1) + ' cup(s) agave nectar')
+print('')
+print('Lemonade ingredients - yields '+ '{:.2f}'.format(servings) + ' servings')
+l2 = l1 / 16
+w2 = w1 / 16
+a2 = a1 / 16
+print('{:.2f}'.format(l2) + ' gallon(s) lemon juice')
+print('{:.2f}'.format(w2) + ' gallon(s) water')
+print('{:.2f}'.format(a2) + ' gallon(s) agave nectar')
