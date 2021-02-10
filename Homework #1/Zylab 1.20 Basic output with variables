@@ -1,0 +1,15 @@
+print ('Enter integer:')
+user_num1 = int (input())
+print ("You entered:", user_num1)
+
+sqr = user_num1 * user_num1
+print (user_num1, 'squared is', sqr)
+cube = user_num1 * user_num1 * user_num1
+print ('And', user_num1, 'cubed is', cube, '!!')
+
+print ('Enter another integer:')
+user_num2 = int (input())
+add = user_num1 + user_num2
+print (user_num1, '+', user_num2, 'is', add)
+multi = user_num1 * user_num2
+print (user_num1, '*', user_num2, 'is', multi)
