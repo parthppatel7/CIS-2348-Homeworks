@@ -1,3 +1,5 @@
+#Name: Parth Patel, PSID: 1837355
+
 userNum = int(input())
 
 userNumSquared = userNum * userNum
