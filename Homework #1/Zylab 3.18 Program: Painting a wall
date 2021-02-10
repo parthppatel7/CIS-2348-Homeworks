@@ -1,0 +1,23 @@
+print('Enter wall height (feet):')
+h = int(input())
+print('Enter wall width (feet):')
+w = int(input())
+a = h * w
+print('Wall area:', a, 'square feet')
+p = a /350
+print('Paint needed: ' + '%.2f'%p + ' gallons')
+r = round(p)
+print('Cans needed:', r, 'can(s)')
+print('')
+print('Choose a color to paint the wall:')
+c = input()
+color = {'red': 35, 'blue': 25, 'green': 23}
+if c == 'red':
+    cost = r * color['red']
+    print('Cost of purchasing red paint: $' + '%.0f'%cost)
+elif c == 'blue':
+    cost = r * color['blue']
+    print('Cost of purchasing blue paint: $' + '%.0f'%cost)
+elif c == 'green':
+    cost = r * color['green']
+    print('Cost of purchasing green paint: $' + '%.0f'%cost)
