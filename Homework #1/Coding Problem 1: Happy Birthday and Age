@@ -1,0 +1,33 @@
+print('Birthday Calculator')
+
+print('Current day')
+m1 = int(input('Month: '))
+d1 = int(input('Day: '))
+y1 = int(input('Year: '))
+
+print('Birthday')
+m2 = int(input('Month: '))
+d2 = int(input('Day: '))
+y2 = int(input('Year: '))
+
+age = 0
+
+if m1 == m2:
+    if d1 == d2:
+        age = y1 - y2
+        print('You are', age, 'years old.')
+        print('Happy Birthday!')
+    elif d1 > d2:
+        age = y1 - y2
+        print('You are', age, 'years old.')
+    elif d1 < d2:
+        age = (y1 - y2) - 1
+        print('You are', age, 'years old.')
+
+elif m1 < m2:
+    age = (y1 - y2) - 1
+    print('You are', age, 'years old.')
+
+elif m1 > m2:
+    age = y1 - y2
+    print('You are', age, 'years old.')
