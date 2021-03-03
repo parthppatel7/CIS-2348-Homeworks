@@ -1,0 +1,25 @@
+#Name: Parth Patel, PSID: 1837355
+
+word = input()
+
+def checkpal(word):
+    x, y = 0, len(word) - 1
+
+    while (x <= y):
+        if (not (word[x] >= 'a' and word[x] <= 'z')):
+            x = x + 1
+        elif (word[x] == word[y]):
+            x = x + 1
+            y = y - 1
+        elif (not (word[y] >= 'a' and word[y] <= 'z')):
+            y = y - 1
+
+        else:
+            return False
+
+    return True
+
+if (checkpal(word)):
+    print(word, 'is a palindrome')
+else:
+    print(word, 'is not a palindrome')
