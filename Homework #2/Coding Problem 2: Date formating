@@ -1,0 +1,45 @@
+#Name: Parth Patel, PSID: 1837355
+
+import datetime
+dates = input()
+
+with open('inputDates.txt', 'r') as datesfile:
+    dr = datetime.reader(datesfile)
+
+    datetimeobject = datetime.strptime(oldformat,'%B %d, %Y')
+
+m = Integer.parseInt(dr);
+    if month == January:
+        m == 1
+    elif month == February:
+        m == 2
+    elif month = March:
+        m == 3
+    elif month = April:
+        m == 4
+    elif month = May:
+        m == 5
+    elif month = June:
+        m == 6
+    elif month = July:
+        m == 7
+    elif month = August:
+        m == 8
+    elif month = September:
+        m == 9
+    elif month = October:
+        m == 10
+    elif month = November:
+        m == 11
+    elif month = December:
+        m == 12
+    else:
+        print('Invalid Month')
+
+    newformat = datetimeobject.strftime('%m/%d/%Y')
+
+     match = newformat.find('%m', '/%d', '/%Y')
+
+     output = open("parsedDates.txt",'w')
+     output.write(match)
+     output.close()
