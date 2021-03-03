@@ -1,0 +1,15 @@
+#Name: Parth Patel, PSID: 1837355 
+
+import csv
+words = input()
+
+with open(words, 'r') as wordsfile:
+    wr = csv.reader(wordsfile)
+    for row in wr:
+        wordlist = row
+
+no_dup = list(dict.fromkeys(wordlist))
+l = len(no_dup)
+
+for x in range(l):
+    print(no_dup[x], wordlist.count(no_dup[x]))
