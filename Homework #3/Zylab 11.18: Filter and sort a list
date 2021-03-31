@@ -1,0 +1,7 @@
+#Name: Parth Patel, PSID: 1837355
+
+num_val = input()
+list_val = [int(num) for num in num_val.split() if int(num) >= 0]
+list_val.sort()
+for val in list_val:
+    print(val, end = " ")
