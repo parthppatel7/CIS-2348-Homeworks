@@ -1,0 +1,10 @@
+#Name: Parth Patel, PSID: 1837355
+
+words = input().split()
+for word in words:
+    count = 0
+    for i in words:
+        if i == word:
+            count += 1
+    print(word, count)
+    
