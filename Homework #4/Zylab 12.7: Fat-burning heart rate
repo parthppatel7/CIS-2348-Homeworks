@@ -1,0 +1,23 @@
+#Name: Parth Patel, PSID: 1837355
+
+# Completing get_age() function
+def get_age():
+   age = int(input())
+   if not(age >= 18 and age <= 75):
+       raise Exception("Invalid age.")
+   return age
+
+# Completing fat_burning_heart_rate() function
+def fat_burning_heart_rate(age):
+   heart_rt = (220-age) * 0.7
+   return heart_rt
+
+if __name__ == "__main__":
+   # Modifying to call get_age() and fat_burning_heart_rate(), and handle the exception
+   try:
+       age = get_age()
+       rate=fat_burning_heart_rate(age)
+       print("Fat burning heart rate for a",age,"year-old:",rate,"bpm")
+   except Exception as Excpt:
+       print(Excpt)
+       print("Could not calculate heart rate info.\n")
