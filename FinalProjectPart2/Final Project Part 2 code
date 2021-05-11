@@ -122,8 +122,7 @@ if __name__ == '__main__':
                                 manf_name = similar_items[item]['manufacturer']
                                 item_type = similar_items[item]['item_type']
                                 price = similar_items[item]['price']
-                                print("You may, also, consider: {}, {}, {}, {}\n".format(item_id, manf_name, item_type,
-                                                                                         price))
+                        print("You may, also, consider: {}, {}, {}, {}\n".format(item_id, manf_name, item_type, price))
 
                 else:
                     print("No similar item in inventory")
